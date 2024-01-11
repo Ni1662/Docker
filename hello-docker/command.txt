@@ -1,0 +1,4 @@
+docker build -t hello-docker .    // build the docker
+docker images                     // check docker images
+docker run hello-docker           // run docker
+docker run -it hello-docker sh    // run docker shell

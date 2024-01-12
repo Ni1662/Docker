@@ -1,0 +1,10 @@
+docker ps                   // list the running docker
+docker ps -a               // list all docker
+docker stop 72d8          // stop the docker by id
+docker container  prune  // delete the docker(stop docker)
+docker rm 6aa4          // delete the docker add --force if it ruuning
+
+// running the docker in react
+docker build -t react-docker .                                                  // build the docker
+docker run -p 5173:5173 react-docker                                           // run the docker with port
+docker run -p 5173:5173 -v "$(pwd):/app" -v /app/node_modules react-docker    // local code link to docker  -v are volume

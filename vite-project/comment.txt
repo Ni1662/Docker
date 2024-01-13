@@ -1,0 +1,6 @@
+// use compose command in docker
+docker init           // select the detail about app
+docker compose up    // data store in yaml file run
+
+
+// Note change the run command in package.json add --host for running in localhost
